@@ -1,1282 +1,563 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>barber shop</title>
-      </head>
-    <style>
-        #div1 {
-            height: 100%;
-            width: 330px;
-            background-color: #CD853F;
-            top:0;
-           position: sticky;
-           top: 0;
-            z-index: 1;
-        }
-
-        ul {
-            margin-top: 250px;
-            position: absolute;
-            margin-left: 50px;
-        }
-
-        li {
-            list-style-type: none;
-            padding: 7px;
-        }
-
-        li a {
-            text-decoration: none;
-            color: black;
-            font-size: 25px;
-            font-family: Segoe UI Black;
-        }
-
-        li a:hover {
-            color: white;
-            transition: 1s;
-        }
-
-        #logo {
-            height: 70px;
-            margin-left: 80px;
-            margin-top: 95px;
-            position: absolute;
-        }
-
-        #div2 {
-            position: relative;
-            height: 100%;
-            width: 1010px;
-            margin-left: 330px;
-            margin-top: -625px;
-            background-image: url('images/hair.JPG');
-            background-size: 110% 150%;
-            background-attachment: fixed;
-        }
-
-        #div3 {
-            position: absolute;
-            height: 98%;
-            width: 1010px;
-            background-image: linear-gradient(to right, #F4B20B, #3ED1D6);
-            margin-left: 330px;
-            opacity: 0.5;
-            margin-top: -625px;
-        }
-
-        #heading1 {
-            position: absolute;
-            margin-left: 400px;
-            margin-top: -400px;
-            color: white;
-            font-family: Segoe UI Black;
-            font-size: 70px;
-        }
-
-        #para1 {
-            position: absolute;
-            margin-left: 400px;
-            margin-top: -300px;
-            font-size: 22px;
-        }
-
-        #input1 {
-            position: absolute;
-            margin-left: 400px;
-            margin-top: -240px;
-            height: 40px;
-            width: 160px;
-            border-radius: 20px;
-            border: none;
-            font-family: Segoe UI Black;
-            color: white;
-            background: transparent;
-            border: 1px solid white;
-            font-size: 20px;
-        }
-
-        #input1:hover {
-            background-color: #F4B20B;
-            border: none;
-            cursor: pointer;
-            transition: 1s;
-        }
-
-        #input2 {
-            position: absolute;
-            margin-left: 570px;
-            margin-top: -240px;
-            height: 40px;
-            width: 160px;
-            border-radius: 20px;
-            border: none;
-            font-family: Segoe UI Black;
-            color: white;
-            background-color: #B01717;
-            font-size: 20px;
-        }
-
-        #input2:hover {
-            background-color: #F4B20B;
-            cursor: pointer;
-            transition: 1s;
-        }
-
-        #heading2 {
-            margin-left: 400px;
-            position: absolute;
-            margin-top: 100px;
-            font-family: Segoe UI Black;
-            font-size: 46px;
-        }
-
-        #para2 {
-            margin-left: 400px;
-            margin-top: 180px;
-            font-family: sans serif;
-            font-size: 30px;
-        }
-
-        #line {
-            width: 900px;
-            margin-left: 400px;
-        }
-
-        #heading3 {
-            margin-left: 400px;
-            font-family: Segoe UI Black;
-            margin-top: 50px;
-            color: #B01717;
-        }
-
-        #div4 {
-            margin-left: 400px;
-            height: 200px;
-            width: 380px;
-            background-color: #CD853F;
-            margin-top: 50px;
-            border-radius: 30px;
-        }
-
-        #div4:hover {
-            transform: scale(1.1);
-            transition: 1s;
-            background-image: linear-gradient(to right, #F4B20B, #3ED1D6);
-        }
-
-        #div5 {
-            margin-left: 900px;
-            height: 200px;
-            width: 380px;
-            background-color: #CD853F;
-            margin-top: -200px;
-            border-radius: 30px;
-        }
-
-        #div5:hover {
-            transform: scale(1.1);
-            transition: 1s;
-            background-image: linear-gradient(to right, #F4B20B, #3ED1D6);
-        }
-
-        #div6 {
-            position: absolute;
-            height: 200px;
-            width: 380px;
-            margin-left: 400px;
-            margin-top: -200px;
-            border-radius: 30px;
-            transform: rotate(10deg);
-            background-image: url('images/barber/barber1.JPG');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 90% 70%;
-        }
-
-        #div6:hover {
-            transform: scale(1.1);
-        }
-
-        #div7 {
-            margin-left: 900px;
-            height: 200px;
-            position: relative;
-            width: 380px;
-            margin-top: -200px;
-            border-radius: 30px;
-            transform: rotate(10deg);
-            background-image: url('images/barber/barber2.JPG');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 90% 30%;
-        }
-
-        #div7:hover {
-            transform: scale(1.1);
-        }
-
-
-        #redo {
-            position: relative;
-            width: 330px;
-            height: 50px;
-            border-radius: 30px;
-            border: none;
-            transform: rotate(-10deg);
-            margin-top: 130px;
-            margin-left: 40px;
-            color: gray;
-            font-size: 20px;
-        }
-
-        #div8 {
-            position: relative;
-            height: 30px;
-            width: 30px;
-            background-color: #B01717;
-            border-radius: 50px;
-            margin-left: 330px;
-            margin-top: -65px;
-        }
-
-        #div9 {
-            position: absolute;
-            height: 30px;
-            width: 30px;
-            background-color: #B01717;
-            border-radius: 50px;
-            margin-left: 330px;
-            margin-top: 100px;
-        }
-
-        #whatsapp {
-            position: absolute;
-            height: 20px;
-            margin-left: 5px;
-            margin-top: 5px;
-        }
-
-        #div8:hover {
-            background-color: #F4B20B;
-            cursor: pointer;
-        }
-
-        #div10 {
-            position: relative;
-            height: 30px;
-            width: 30px;
-            background-color: #B01717;
-            border-radius: 50px;
-            margin-left: 290px;
-            margin-top: -23px;
-            transform: rotate(-10deg);
-        }
-
-        #facebook {
-            position: absolute;
-            height: 20px;
-            margin-left: 5px;
-            margin-top: 5px;
-        }
-
-        #div10:hover {
-            background-color: #F4B20B;
-            cursor: pointer;
-        }
-
-        #div11 {
-            position: relative;
-            height: 30px;
-            width: 30px;
-            background-color: #B01717;
-            border-radius: 50px;
-            margin-left: 250px;
-            margin-top: -23px;
-            transform: rotate(-10deg);
-        }
-
-        #insta {
-            position: absolute;
-            height: 20px;
-            margin-left: 5px;
-            margin-top: 5px;
-        }
-
-        #div11:hover {
-            background-color: #F4B20B;
-            cursor: pointer;
-        }
-
-        #discount {
-            position: relative;
-            height: 320px;
-            width: 940px;
-            margin-left: 400px;
-            margin-top: 100px;
-            background-image: url('images/high.JPG');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: 100% 50%;
-        }
-
-        #heading4 {
-            margin-left: 280px;
-            color: #B01717;
-            font-size: 55px;
-            font-family: Segoe UI Black;
-            margin-top: 90px;
-            position: absolute;
-        }
-
-        #para3 {
-            position: absolute;
-            color: white;
-            font-size: 25px;
-            margin-left: 330px;
-            margin-top: 170px;
-        }
-
-        #input3 {
-            position: absolute;
-            margin-left: 400px;
-            width: 190px;
-            margin-top: 230px;
-            height: 40px;
-            border-radius: 30px;
-            border: none;
-            background-color: #CD853F;
-            font-family: Segoe UI Black;
-        }
-
-        #heading5 {
-            margin-left: 400px;
-            margin-top: 100px;
-            font-size: 50px;
-            font-family: Segoe UI Black;
-        }
-
-        #service1 {
-            position: relative;
-            margin-left: 400px;
-            margin-top: 100px;
-            height: 250px;
-            width: 400px;
-            border-radius: 40px;
-        }
-
-        #service1:hover {
-            transform: scale(1.1);
-            transition: 1s;
-        }
-
-        #div12 {
-            position: absolute;
-            height: 200px;
-            width: 360px;
-            border-radius: 40px;
-            margin-left: 20px;
-            margin-top: 20px;
-            border: 2px solid white;
-        }
-
-        #woman {
-            position: absolute;
-            width: 400px;
-            height: 250px;
-            border-radius: 40px;
-        }
-
-        #haircut {
-            position: absolute;
-            color: white;
-            margin-top: 140px;
-            margin-left: 20px;
-            font-family: Segoe UI Black;
-        }
-
-        #price {
-            position: absolute;
-            margin-left: 260px;
-            margin-top: 150px;
-            width: 70px;
-            border-radius: 40px;
-            border: none;
-            background-color: #CD853F;
-            height: 30px;
-        }
-
-        #div12:hover {
-            border: 4px solid #CD853F;
-        }
-
-        #washing {
-            position: absolute;
-            width: 400px;
-            height: 250px;
-            border-radius: 40px;
-        }
-
-        #service2 {
-            position: relative;
-            margin-left: 900px;
-            margin-top: -250px;
-            height: 250px;
-            width: 400px;
-            border-radius: 40px;
-        }
-
-        #service2:hover {
-            transform: scale(1.1);
-            transition: 1s;
-        }
-
-        #service3 {
-            position: relative;
-            margin-left: 400px;
-            margin-top: 50px;
-            height: 250px;
-            width: 400px;
-            border-radius: 40px;
-        }
-
-        #service3:hover {
-            transform: scale(1.1);
-            transition: 1s;
-        }
-
-        #service4 {
-            position: relative;
-            margin-left: 900px;
-            margin-top: -250px;
-            height: 250px;
-            width: 400px;
-            border-radius: 40px;
-        }
-
-        #service4:hover {
-            transform: scale(1.1);
-            transition: 1s;
-        }
-
-        #book {
-            position: relative;
-            height: 130%;
-            width: 930px;
-            margin-left: 400px;
-            background-image: url(images/chair.JPG);
-            margin-top: 100px;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-position: cover;
-            background-size: 100% 100%;
-        }
-
-        #seat {
-            height: 110%;
-            width: 650px;
-            background-color: white;
-            margin-left: 520px;
-            margin-top: -750px;
-            position: relative;
-            border-radius: 40px;
-        }
-
-        #heading6 {
-            margin-left: 200px;
-            font-size: 40px;
-            font-family: Segoe UI Black;
-            margin-top: 60px;
-            position: absolute;
-        }
-
-        #para5 {
-            margin-left: 150px;
-            position: absolute;
-            font-size: 22px;
-            margin-top: 120px;
-            color: gray;
-        }
-
-        #input4 {
-            height: 40px;
-            width: 150px;
-            position: absolute;
-            border-radius: 40px;
-            border: none;
-            margin-left: 1100px;
-            margin-top: -100px;
-            background-color: #CD853F;
-            color: white;
-            font-family: Segoe UI Black;
-            font-size: 17px;
-        }
-
-        #input4:hover {
-            background-color: #B01717;
-            cursor: pointer;
-            transition: 1s;
-        }
-
-        #fullname {
-            border-radius: 10px;
-            position: absolute;
-            border: 1px solid gray;
-            height: 50px;
-            width: 250px;
-            margin-left: 60px;
-            margin-top: 200px;
-            font-family: Segoe UI Black;
-            font-size: 18px;
-        }
-
-        #fullname:hover {
-            background-color: #EAFBFA;
-            border: 4px solid #51E0D9;
-        }
-
-        #time {
-            position: absolute;
-            border-radius: 10px;
-            border: 1px solid gray;
-            height: 50px;
-            width: 250px;
-            margin-left: 60px;
-            margin-top: 270px;
-            font-family: Segoe UI Black;
-            font-size: 18px;
-        }
-
-        #time:hover {
-            background-color: #EAFBFA;
-            border: 4px solid #51E0D9;
-        }
-
-        #date {
-            position: absolute;
-            border-radius: 10px;
-            border: 1px solid gray;
-            height: 50px;
-            width: 250px;
-            margin-left: 60px;
-            margin-top: 340px;
-            font-family: Segoe UI Black;
-            font-size: 18px;
-        }
-
-        #date:hover {
-            background-color: #EAFBFA;
-            border: 4px solid #51E0D9;
-        }
-
-        textarea {
-            border-radius: 10px;
-            position: absolute;
-            border: 1px solid gray;
-            height: 100px;
-            width: 550px;
-            margin-left: 60px;
-            margin-top: 420px;
-            font-family: Segoe UI Black;
-            font-size: 18px;
-        }
-
-        textarea:hover {
-            background-color: #EAFBFA;
-            border: 4px solid #51E0D9;
-        }
-
-        #no {
-            position: absolute;
-            border-radius: 10px;
-            border: 1px solid gray;
-            height: 50px;
-            width: 250px;
-            margin-left: 350px;
-            margin-top: 200px;
-            font-family: Segoe UI Black;
-            font-size: 18px;
-        }
-
-        #no:hover {
-            background-color: #EAFBFA;
-            border: 4px solid #51E0D9;
-        }
-
-        select {
-            position: absolute;
-            border-radius: 10px;
-            border: 1px solid gray;
-            height: 50px;
-            width: 250px;
-            margin-left: 350px;
-            margin-top: 270px;
-            font-family: Segoe UI Black;
-            font-size: 18px;
-        }
-
-        select:hover {
-            background-color: #EAFBFA;
-            border: 4px solid #51E0D9;
-        }
-
-        #num {
-            position: absolute;
-            border-radius: 10px;
-            border: 1px solid gray;
-            height: 50px;
-            width: 250px;
-            margin-left: 350px;
-            margin-top: 340px;
-            font-family: Segoe UI Black;
-            font-size: 18px;
-        }
-
-        #num:hover {
-            background-color: #EAFBFA;
-            border: 4px solid #51E0D9;
-        }
-
-        #submit {
-            position: absolute;
-            border-radius: 30px;
-            border: none;
-            height: 50px;
-            width: 250px;
-            margin-left: 200px;
-            margin-top: 550px;
-            font-family: Segoe UI Black;
-            font-size: 20px;
-            color: white;
-            background-color: #B01717;
-        }
-
-        #submit:hover {
-            background-color: #F4B20B;
-        }
-
-        #list {
-            position: absolute;
-            margin-left: 400px;
-            margin-top: 150px;
-            font-family: Segoe UI Black;
-            font-size: 50px;
-        }
-
-        #start {
-            position: absolute;
-            margin-left: 400px;
-            margin-top: 230px;
-            font-size: 20px;
-            font-family: Segoe UI Black;
-        }
-
-        #cut {
-            margin-left: 400px;
-            margin-top: 290px;
-            font-family: Segoe UI Black;
-            font-size: 30px;
-        }
-
-        #line2 {
-            margin-left: 530px;
-            width: 300px;
-            margin-top: -40px;
-        }
-
-        #dollar {
-            position: absolute;
-            color: #F4B20B;
-            margin-left: 840px;
-            margin-top: -30px;
-        }
-
-        #Beard {
-            margin-left: 400px;
-            font-family: Segoe UI Black;
-            font-size: 30px;
-        }
-
-        #line3 {
-            margin-left: 570px;
-            width: 250px;
-            margin-top: -40px;
-        }
-
-        #dollar1 {
-            position: absolute;
-            color: #F4B20B;
-            margin-left: 840px;
-            margin-top: -30px;
-        }
-
-        #razor {
-            margin-left: 400px;
-            font-family: Segoe UI Black;
-            font-size: 30px;
-        }
-
-        #line4 {
-            margin-left: 560px;
-            width: 270px;
-            margin-top: -40px;
-        }
-
-        #dollar2 {
-            position: absolute;
-            color: #F4B20B;
-            margin-left: 840px;
-            margin-top: -30px;
-        }
-
-        #Shaves {
-            margin-left: 400px;
-            font-family: Segoe UI Black;
-            font-size: 30px;
-        }
-
-        #line5 {
-            margin-left: 530px;
-            width: 300px;
-            margin-top: -40px;
-        }
-
-        #dollar3 {
-            position: absolute;
-            color: #F4B20B;
-            margin-left: 840px;
-            margin-top: -30px;
-        }
-
-        #Styling {
-            margin-left: 400px;
-            font-family: Segoe UI Black;
-            font-size: 30px;
-        }
-
-        #line6 {
-            margin-left: 620px;
-            width: 200px;
-            margin-top: -40px;
-        }
-
-        #dollar4 {
-            position: absolute;
-            color: #F4B20B;
-            margin-left: 840px;
-            margin-top: -30px;
-        }
-
-        #div13 {
-            height: 250px;
-            width: 320px;
-            position: absolute;
-            background-color: #CD853F;
-            margin-left: 980px;
-            margin-top: -260px;
-            border-radius: 40px;
-        }
-
-        #div13:hover {
-            background-image: linear-gradient(to right, #F4B20B, #3ED1D6);
-        }
-
-        #div14 {
-            height: 250px;
-            width: 320px;
-            position: absolute;
-            background-image: url(images/chair.JPG);
-            background-repeat: no-repeat;
-            background-position: contain;
-            margin-left: 980px;
-            margin-top: -260px;
-            border-radius: 40px;
-            transform: rotate(10deg);
-            background-size: 100% 100%;
-        }
-
-        #div14:hover {
-            transform: scale(1.1);
-            transition: 1s;
-        }
-
-        #div15 {
-            position: relative;
-            height: 300px;
-            width: 930px;
-            background-color: #EAFBFA;
-            margin-left: 400px;
-            margin-top: 120px;
-        }
-
-        #hello {
-            position: absolute;
-            font-family: Segoe UI Black;
-            font-size: 50px;
-            margin-left: 400px;
-            margin-top: 150px;
-        }
-
-        #info {
-            position: absolute;
-            font-family: Segoe UI Black;
-            font-size: 30px;
-            margin-left: 400px;
-            margin-top: 50px;
-        }
-
-        .beauty {
-            position: absolute;
-            ;
-            margin-left: 400px;
-            margin-top: 100px;
-            font-size: 22px;
-            color: #CD853F;
-        }
-
-        .beauty:hover {
-            color: #B01717;
-            transition: 1s;
-            cursor: pointer;
-        }
-
-        #div16 {
-            height: 200px;
-            width: 350px;
-            background-color: #CD853F;
-            position: relative;
-            margin-left: 900px;
-            margin-top: -160px;
-            border-radius: 40px;
-        }
-
-        #div17 {
-            height: 200px;
-            width: 350px;
-            background-color: #B01717;
-            position: relative;
-            margin-left: 900px;
-            margin-top: -200px;
-            border-radius: 40px;
-            transform: rotate(10deg);
-        }
-
-        #div18 {
-            position: absolute;
-            height: 50px;
-            width: 50px;
-            background-color: #CD853F;
-            border-radius: 50px;
-            margin-left: 30px;
-            margin-top: 50px;
-            transform: rotate(-10deg);
-        }
-
-        #home {
-            height: 30px;
-            margin-left: 9px;
-            margin-top: 7px;
-        }
-
-        .daily {
-            position: absolute;
-            color: white;
-            font-size: 30px;
-            margin-top: 10px;
-        }
-
-        .am {
-            font-size: 30px;
-            margin-top: 25px;
-            position: absolute;
-        }
-
-        #div19 {
-            position: relative;
-            height: 40px;
-            width: 40px;
-            background-color: #B01717;
-            border-radius: 50px;
-            margin-left: 400px;
-            margin-top: 180px;
-        }
-
-        #pic1 {
-            position: absolute;
-            height: 20px;
-            margin-left: 10px;
-            margin-top: 10px;
-        }
-
-        #div19:hover {
-            background-color: #CD853F;
-            transition: 1s;
-        }
-
-        #div20 {
-            position: relative;
-            height: 40px;
-            width: 40px;
-            background-color: #B01717;
-            border-radius: 50px;
-            margin-left: 450px;
-            margin-top: -40px;
-        }
-
-        #pic1 {
-            position: absolute;
-            height: 20px;
-            margin-left: 10px;
-            margin-top: 10px;
-        }
-
-        #div20:hover {
-            background-color: #CD853F;
-            transition: 1s;
-        }
-
-        #div21 {
-            position: relative;
-            height: 40px;
-            width: 40px;
-            background-color: #B01717;
-            border-radius: 50px;
-            margin-left: 500px;
-            margin-top: -40px;
-        }
-
-        #pic1 {
-            position: absolute;
-            height: 20px;
-            margin-left: 10px;
-            margin-top: 10px;
-        }
-
-        #div21:hover {
-            background-color: #CD853F;
-            transition: 1s;
-        }
-
-        #div22 {
-            width: 900px;
-            margin-left: 400px;
-            margin-top: 100px;
-            border-radius: 30px;
-        }
-
-        .google-map {
-            border-radius: 30px;
-        }
-
-        #branches {
-            margin-left: 400px;
-            margin-top: 50px;
-            font-family: Segoe UI Black;
-            font-size: 40px;
-        }
-
-        #city {
-            margin-left: 400px;
-            font-family: Segoe UI Black;
-            font-size: 20px;
-            color: #B01717;
-        }
-
-        .germany {
-            margin-left: 400px;
-            font-size: 22px;
-            color: gray;
-        }
-
-        #city1 {
-            margin-left: 740px;
-            font-family: Segoe UI Black;
-            font-size: 20px;
-            color: #B01717;
-            margin-top: -125px;
-        }
-
-        .germany1 {
-            margin-left: 740px;
-            font-size: 22px;
-            color: gray;
-        }
-
-        #city2 {
-            margin-left: 1030px;
-            font-family: Segoe UI Black;
-            font-size: 20px;
-            color: #B01717;
-            margin-top: -125px;
-        }
-
-        .germany2 {
-            margin-left: 1030px;
-            font-size: 22px;
-            color: gray;
-        }
-
-        #copy {
-            margin-left: 400px;
-            margin-top: 50px;
-            color: gray;
-        }
-
-        #icon {
-            height: 70px;
-            transform: rotate(270deg);
-            margin-left: 1200px;
-        }
-
-        #footer {
-            height: 10px;
-            width: 940px;
-            margin-left: 400px;
-            margin-top: 30px;
-            background-image: linear-gradient(to right, #F4B20B, #3ED1D6);
-        }
-
-        .up {
-            position: absolute;
-            font-family: Segoe UI Black;
-            font-size: 36px;
-            color: white;
-            margin-left: 550px;
-            margin-top: -140px;
-        }
-
-        #circle {
-            position: absolute;
-            height: 90px;
-            width: 90px;
-            border-radius: 50px;
-            background-image: url(images/chair.JPG);
-            background-repeat: no-repeat;
-            background-size: 120% 110%;
-            border: 9px solid #CD853F;
-            margin-left: 1100px;
-            margin-top: -430px;
-        }
-
-      
-    </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Business Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 <body>
-
-    <div id="div1">
-        <img id="logo" src="images/logo.PNG">
-        <ul>
-            <li><a href="#" style="color:white;margin-left:28px;">HOME</a></li>
-            <li><a href="#heading2">OUT STORY</a></li>
-            <li><a href="#heading5">SERVICES</a></li>
-            <li><a href="#list">PRICE LIST</a></li>
-            <li><a href="#info">CONTACT</a></li>
-        </ul>
-    </div>
-    <div id="div2">
-    </div>
-    <div id="div3">
-    </div>
-    <div id="circle">
-    </div>
-
-    <h1 class="up">
-        <pre class="up">Hurry Up! 
-Get good 
-haircut.<pre></h1>
-<input id="input4"type="button"value="Book a Seat">
-<h1 id="heading1">Barber Shop</h1>
-<p id="para1">Get the most professional cut for you</p>
-<input id="input1" type="button"value="About Us">
-<input id="input2" type="button"value="What we do">
-<h1 id="heading2">Best hairdressers</h1>
-<p id="para2"><pre id="para2">Gentlemen's Barber Shop is new Bootstrap v5 HTML CSS template by 
-TemplateMo for everyone. There is a sidebar menu to navigate the one-page
- layout. You can feel free to adapt this template for your business.</pre>
-        </p>
-        <hr id="line">
-        <h1 id="heading3">Meet barbers</h1>
-        <div id="div4">
-
-        </div>
-        <div id="div6">
-
-            <input id="redo" type="button" value="Redo">
-            <div id="div8">
-                <img id="whatsapp" src="whatsapp.PNG">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fas fa-cube"></i></span>
+                <span class="logo-text">Nexus</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
             </div>
-            <div id="div10">
-                <img id="facebook" src="facebook.PNG">
-            </div>
-            <div id="div11">
-                <img id="insta" src="instagram-logo.PNG">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-        <div id="div5">
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="hero-particles" id="particles"></div>
         </div>
-        <div id="div7">
-            <div id="div9">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-rocket"></i>
+                <span>Transforming Businesses Since 2015</span>
             </div>
-            <input id="redo" type="button" value="Sam">
-
-        </div>
-        <div id="discount">
-            <h1 id="heading4">Get 32% Discount</h1>
-            <p id="para3">on every second week of the month</p>
-            <input id="input3" type="button" value="Promo Code:Barber Mo">
-        </div>
-
-        <h1 id="heading5">Services</h1>
-
-        <div id="service1">
-            <img id="woman" src="images/services/woman.JPG">
-            <div id="div12">
-                <h1 id="haircut">Hair cut</h1>
-                <input id="price" type="button" value="$36.00">
+            <h1 class="hero-title">
+                <span class="title-line">Innovate.</span>
+                <span class="title-line">Transform.</span>
+                <span class="title-line highlight">Succeed.</span>
+            </h1>
+            <p class="hero-description">
+                We help businesses thrive in the digital age through innovative solutions, 
+                strategic consulting, and cutting-edge technology.
+            </p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary btn-lg">
+                    <span>Explore Services</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#about" class="btn btn-outline btn-lg">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Learn More</span>
+                </a>
             </div>
-        </div>
-
-        <div id="service2">
-            <img id="woman" src="images/services/washing.JPG">
-            <div id="div12">
-                <h1 id="haircut">Washing</h1>
-                <input id="price" type="button" value="$36.00">
-            </div>
-        </div>
-
-        <div id="service3">
-            <img id="woman" src="images/services/boy.JPG">
-            <div id="div12">
-                <h1 id="haircut">Kids</h1>
-                <input id="price" type="button" value="$36.00">
-            </div>
-        </div>
-
-        <div id="service4">
-            <img id="woman" src="images/services/client.JPG">
-            <div id="div12">
-                <h1 id="haircut">Shaves</h1>
-                <input id="price" type="button" value="$36.00">
-            </div>
-        </div>
-
-
-
-
-        <div id="book">
-        </div>
-
-        <div id="seat">
-            <h1 id="heading6">Book a Seat</h1>
-            <p id="para5">Please fill out the form and we get back to you</p>
-            <input id="fullname" type="text" placeholder="Full name">
-            <input id="time" type="time">
-            <input id="date" type="date">
-            <textarea placeholder="comment(optional)">
-</textarea>
-            <input id="no" type="tel" placeholder="Mobile 010-020-0340">
-            <select>
-                <option>Select Branches</option>
-                <option>Grunberger</option>
-                <option>Behrenstrabe</option>
-                <option>Weinbergswer</option>
-
-            </select>
-            <input id="num" type="number">
-            <input id="submit" type="button" value="Submit">
-        </div>
-        <h1 id="list">Price List</h1>
-        <h4 id="start">Starting at $25</h4>
-        <h2 id="cut">Haircut</h2>
-        <hr id="line2">
-        <h2 id="dollar">$32.00</h2>
-        <h2 id="Beard">Beard Trim</h2>
-        <hr id="line3">
-        <h2 id="dollar1">$26.00</h2>
-        <h2 id="razor">Razor Cut</h2>
-        <hr id="line4">
-        <h2 id="dollar2">$38.00</h2>
-
-        <h2 id="Shaves">Shaves</h2>
-        <hr id="line5">
-        <h2 id="dollar3">$30.00</h2>
-        <h2 id="Styling">Styling / Color</h2>
-        <hr id="line6">
-        <h2 id="dollar4">$20.00</h2>
-
-        <div id="div13">
-        </div>
-
-        <div id="div14">
-
-        </div>
-        <div id="div15">
-            <h1 id="hello">Say hello</h1>
-        </div>
-        <h1 id="info">Contact Information</h1>
-        <p class"beauty">
-        <pre class="beauty">(+49) 120-240-3600
-hello@barber.beauty</pre>
-        </p>
-        <div id="div19">
-            <img id="pic1" src="facebook.PNG">
-        </div>
-        <div id="div20">
-            <img id="pic1" src="whatsapp.PNG">
-        </div>
-        <div id="div21">
-            <img id="pic1" src="instagram-logo.PNG">
-        </div>
-        <div id="div16">
-        </div>
-        <div id="div17">
-            <div id="div18">
-
-                <img id="home" src="home.PNG">
-                <h1 class="daily">
-                    <pre class="daily">OPEN DAILY</pre>
-                </h1>
-                <h1 class="am">
-                    <pre class="am">10:00 AM - 8:00 PM</pre>
-                </h1>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="150">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="25">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Countries Served</span>
+                </div>
             </div>
         </div>
-
-        <div id="div22">
-
-            <iframe class="google-map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7702.122299518348!2d13.396786616231472!3d52.531268574169616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a85180d9075183%3A0xbba8c62c3dc41a7d!2sBarbabella%20Barbershop!5e1!3m2!1sen!2sth!4v1673886261201!5m2!1sen!2sth"
-                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
         </div>
+    </section>
 
-
-        <h1 id="branches">Our Branches</h1>
-        <h3 id="city">Grünberger</h3>
-        <p class="germany">
-        <pre class="germany">Grünberger Str. 31,
-10245 Berlin, Germany</pre>
-        </p>
-        <h3 id="city1">Behrenstraße
-        </h3>
-        <p class="germany1">
-        <pre class="germany1">Behrenstraße 27,
-10117 Berlin, Germany
-</pre>
-        </p>
-        <h3 id="city2">Weinbergsweg
-        </h3>
-        <p class="germany2">
-        <pre class="germany2">Weinbergsweg 23, 
-10119 Berlin, Germany
-</pre>
-        </p>
-        <p id="copy">Copyright © 2036 Barber Shop - Design: TemplateMo</p>
-        <a href="#div1">
-            <img id="icon" src="forward.PNG"></a>
-        <div id="footer">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Building the Future of Business</h2>
+                <p class="section-description">
+                    We are a team of passionate innovators dedicated to transforming businesses through technology and strategy.
+                </p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation First</h3>
+                    <p>We stay ahead of the curve, implementing cutting-edge solutions that give your business a competitive edge.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Client-Centric</h3>
+                    <p>Your success is our priority. We work closely with you to understand and achieve your business goals.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Results Driven</h3>
+                    <p>We measure our success by the tangible results and growth we deliver for your business.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Trusted Partner</h3>
+                    <p>With years of experience, we've built lasting relationships based on trust and excellence.</p>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">Solutions for Every Need</h2>
+                <p class="section-description">
+                    Comprehensive services designed to accelerate your business growth and digital transformation.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications built with modern technologies for optimal performance.</p>
+                    <a href="#" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+                    <a href="#" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful, intuitive interfaces that engage users and drive conversions.</p>
+                    <a href="#" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Strategic marketing campaigns that increase visibility and generate quality leads.</p>
+                    <a href="#" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable cloud infrastructure and migration services for modern businesses.</p>
+                    <a href="#" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI & Automation</h3>
+                    <p>Intelligent automation solutions that streamline operations and boost efficiency.</p>
+                    <a href="#" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Our Recent Work</h2>
+                <p class="section-description">
+                    Explore our latest projects and see how we've helped businesses achieve their goals.
+                </p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">E-Commerce</span>
+                                <h3>Luxury Fashion Store</h3>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Healthcare</span>
+                                <h3>MediCare Health App</h3>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Education</span>
+                                <h3>EduLearn Platform</h3>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Real Estate</span>
+                                <h3>Property Finder Pro</h3>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Food & Beverage</span>
+                                <h3>Foodie Delivery App</h3>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Travel</span>
+                                <h3>Wanderlust Travels</h3>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Team</span>
+                <h2 class="section-title">Meet the Experts</h2>
+                <p class="section-description">
+                    Talented professionals dedicated to delivering excellence in every project.
+                </p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="team-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Alexandra Chen</h3>
+                        <span class="team-role">CEO & Founder</span>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="team-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Marcus Johnson</h3>
+                        <span class="team-role">CTO</span>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="team-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Sarah Williams</h3>
+                        <span class="team-role">Design Director</span>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="team-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>David Park</h3>
+                        <span class="team-role">Lead Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Let's discuss how we can help you achieve your goals and take your business to the next level.</p>
+                <a href="#contact" class="btn btn-white btn-lg">
+                    <span>Start Your Project</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="cta-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact Us</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Visit Us</h4>
+                            <p>123 Business Avenue<br>San Francisco, CA 94102</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567<br>Mon - Fri: 9AM - 6PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>hello@nexus.com<br>support@nexus.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-full">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon"><i class="fas fa-cube"></i></span>
+                        <span class="logo-text">Nexus</span>
+                    </a>
+                    <p>Transforming businesses through innovative digital solutions. Your success is our mission.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Cloud Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest news and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nexus Business Solutions. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
